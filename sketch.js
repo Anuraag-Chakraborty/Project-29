@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var engine, world;
-var holder,ball;
+var holder,ball,ground;
 var stand1,stand2;
 var ball;
 var slingShot;
@@ -19,6 +19,7 @@ function setup() {
   Engine.run(engine);
   stand1 = new Stand(390,300,250,10);
   stand2 = new Stand(700,200,200,10);
+  ground = new Ground();
  
   //level one
   block1 = new Block(300,275,30,40);
